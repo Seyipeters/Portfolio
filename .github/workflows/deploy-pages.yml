@@ -33,36 +33,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp -R lecture-01 lecture-02 lecture-03 lecture-04 lecture-05 _site/
-
-          cat > _site/index.html << 'HTML'
-          <!doctype html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Portfolio Lectures</title>
-            <style>
-              body { font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; }
-              h1 { margin-bottom: .4rem; }
-              ul { line-height: 2; }
-              a { text-decoration: none; }
-              a:hover { text-decoration: underline; }
-            </style>
-          </head>
-          <body>
-            <h1>Browser Programming Portfolio</h1>
-            <p>Published lectures:</p>
-            <ul>
-              <li><a href="./lecture-01/index.html">Lecture 01</a></li>
-              <li><a href="./lecture-02/portfolio.html">Lecture 02</a></li>
-              <li><a href="./lecture-03/index.html">Lecture 03</a></li>
-              <li><a href="./lecture-04/portfolio.html">Lecture 04</a></li>
-              <li><a href="./lecture-05/portfolio.html">Lecture 05</a></li>
-            </ul>
-          </body>
-          </html>
-          HTML
+          cp index.html portfolio.html style.css script.js _site/
+          cp -R images _site/
 
           touch _site/.nojekyll
 

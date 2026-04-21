@@ -7,6 +7,13 @@ const PROJECT_STORAGE_KEY = 'portfolio_featured_projects';
 
 const PROJECT_CANDIDATES = [
     {
+        id: 'ai_ml_internship_finland',
+        title: 'AI/ML Internship Project (Finland Focus)',
+        tag: 'Machine Learning',
+        description: 'End-to-end churn risk prediction pipeline with training, evaluation metrics, and reusable inference scripts.',
+        url: 'https://github.com/Seyipeters/Portfolio/tree/main/ai-ml-internship-finland'
+    },
+    {
         id: 'sql_data_warehouse_project',
         title: 'SQL Data Warehouse Project',
         tag: 'Data Engineering',
@@ -65,6 +72,7 @@ const PROJECT_CANDIDATES = [
 ];
 
 const DEFAULT_FEATURED_PROJECT_IDS = [
+    'ai_ml_internship_finland',
     'sql_data_warehouse_project',
     'FinnVocabAndroid',
     'ny_taxi_trips_pipeline'
