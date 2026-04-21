@@ -2,86 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Peter Mayowa Omole, an ICT student focused on IoT, data analytics, cloud technologies, and digital experiences.">
   <link rel="stylesheet" href="style.css">
-  <title>Peter Mayowa Omole – Portfolio</title>
+  <title>Peter Mayowa Omole | Portfolio</title>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Skip link for accessibility -->
-  <a href="#main">Skip to content</a>
+  <header class="hero">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">Peter Omole</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Header section -->
-  <header>
-    <h1>Peter Mayowa Omole</h1>
-    <p>
-      IT Student (IoT) at Savonia University of Applied Sciences.<br>
-      Background in Engineering, Data Analytics, and Digital Marketing.<br>
-      Currently based in Finland.
-    </p>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#works">Portfolio</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#interests">Interests</a></li>
-    </ul>
-  </nav>
-
-  <!-- Controls for JS features -->
-  <div class="controls">
-    <button id="theme-toggle">Toggle Theme</button>
-    <button id="click-counter">Click Me</button>
-  </div>
-
-  <!-- Main content -->
-  <main id="main">
-
-    <!-- Portfolio / Works section -->
-    <section id="works">
-      <h2>Portfolio</h2>
-
-      <div class="portfolio-intro">
-        <figure>
-          <img src="images/profile.jpg" alt="Portrait of Peter Mayowa Omole">
-          <figcaption>Personal profile photo</figcaption>
-        </figure>
-
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-            I am a motivated tech professional with a background in Physics Electronics from the Federal University of Technology, Akure, Nigeria, and currently studying Information and Communication Technology at Savonia University of Applied Sciences, Finland.
-          </p>
-          <p>
-            I specialize in data analytics, data engineering, digital marketing, and cloud-based solutions, with skills in tools like Power BI, Python, Microsoft Office, Docker, Terraform, GCP, Snowflake, Databricks, DBT, and AWS Cloud. I am passionate about using data and AI to solve real-world problems and improve digital experiences.
-          </p>
-        </section>
+    <div class="hero-content" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">ICT Student • Data & Cloud Enthusiast</p>
+        <h1>Building useful digital solutions with data, cloud tools, and thoughtful user experiences.</h1>
+        <p class="hero-text">
+          I am Peter Mayowa Omole, an Information and Communication Technology student at Savonia University of Applied Sciences with a background in engineering, analytics, and digital marketing.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="https://github.com/Seyipeters" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+        </div>
+        <ul class="hero-highlights" aria-label="Quick highlights">
+          <li>Based in Finland</li>
+          <li>Focused on IoT, analytics, and cloud</li>
+          <li>Open to practical tech collaborations</li>
+        </ul>
       </div>
 
-      <figure class="video-placeholder">
-        <a href="https://youtu.be/208LFdNqPvg" target="_blank" rel="noopener noreferrer" aria-label="Open project video on YouTube">
-          <img src="https://img.youtube.com/vi/208LFdNqPvg/hqdefault.jpg" alt="Project demonstration video thumbnail">
-          <span class="play-button" aria-hidden="true">▶</span>
-        </a>
-        <figcaption>Short video demonstration of one of my projects — opens on YouTube</figcaption>
-      </figure>
+      <aside class="hero-card">
+        <img src="images/profile.jpg" alt="Portrait of Peter Mayowa Omole">
+        <div class="hero-card-body">
+          <h2>Profile Snapshot</h2>
+          <p>Physics Electronics graduate with growing experience in data engineering, cloud platforms, and business-focused digital solutions.</p>
+          <div class="hero-stats">
+            <div>
+              <strong>13+</strong>
+              <span>Technical tools</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>Featured projects</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>Video showcase</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <button id="theme-toggle" type="button" aria-pressed="false">Switch to dark mode</button>
+    <button id="click-counter" type="button">Appreciate portfolio</button>
+    <p id="counter-message" class="counter-message" aria-live="polite">Thanks for visiting.</p>
+  </div>
+
+  <main id="main">
+    <section class="section section-intro" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>Blending technical skills with business awareness</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I am a motivated tech professional with a background in Physics Electronics from the Federal University of Technology, Akure, Nigeria, and I am currently studying Information and Communication Technology at Savonia University of Applied Sciences in Finland.
+          </p>
+          <p>
+            My work sits at the intersection of analytics, data engineering, cloud platforms, and digital growth. I enjoy solving real-world problems with practical systems that improve insights, efficiency, and user experience.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>Core Focus</h3>
+          <ul class="check-list">
+            <li>Data-driven decision support</li>
+            <li>Cloud-ready engineering workflows</li>
+            <li>Industrial IoT and smart systems</li>
+            <li>Digital products with measurable impact</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills section -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="section-label">Skills</p>
+        <h2>Tools and technologies I work with</h2>
+      </div>
       <div class="skills-grid">
         <div class="skill-card">HTML</div>
         <div class="skill-card">CSS</div>
-        <div class="skill-card">JS</div>
+        <div class="skill-card">JavaScript</div>
         <div class="skill-card">Python</div>
         <div class="skill-card">SQL</div>
         <div class="skill-card">Power BI</div>
         <div class="skill-card">Docker</div>
         <div class="skill-card">Terraform</div>
-        <div class="skill-card">GCP</div>
+        <div class="skill-card">Google Cloud</div>
         <div class="skill-card">Snowflake</div>
         <div class="skill-card">Databricks</div>
         <div class="skill-card">DBT</div>
@@ -89,54 +119,69 @@
       </div>
     </section>
 
-    <!-- Projects section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h4>SQL Data Warehouse Project</h4>
-        <p>A comprehensive data warehousing solution built with SQL for data analytics and visualization.</p>
-        <a href="https://github.com/Seyipeters/sql_data_warehouse_project" target="_blank" class="project-link">View Project →</a>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>Selected work that reflects my interests</h2>
       </div>
-      <div class="project-card">
-        <h4>FinnVocab Android App</h4>
-        <p>Android app for language learning designed to help users learn Finnish vocabulary effectively.</p>
-        <a href="https://github.com/Seyipeters/FinnVocabAndroid" target="_blank" class="project-link">View Project →</a>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-tag">Data Engineering</span>
+          <h3>SQL Data Warehouse Project</h3>
+          <p>A comprehensive data warehousing solution built with SQL to support structured analytics, reporting, and better decision-making.</p>
+          <a href="https://github.com/Seyipeters/sql_data_warehouse_project" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">Mobile App</span>
+          <h3>FinnVocab Android App</h3>
+          <p>An Android learning app designed to help users practice Finnish vocabulary with a simple and effective mobile experience.</p>
+          <a href="https://github.com/Seyipeters/FinnVocabAndroid" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+        </article>
       </div>
     </section>
 
-    <!-- Areas of Interest section -->
-    <section id="interests">
-      <h2>Areas of Interest</h2>
-      <ul>
-        <li>Industrial IoT and smart systems</li>
-        <li>Cloud-based data engineering</li>
-        <li>Data analytics and visualization</li>
-        <li>Digital marketing and SEO</li>
-        <li>Photography and video editing</li>
-      </ul>
+    <section class="section section-showcase" id="showcase">
+      <div class="section-heading">
+        <p class="section-label">Showcase</p>
+        <h2>A quick look at one project in action</h2>
+      </div>
+      <figure class="video-placeholder">
+        <a href="https://youtu.be/208LFdNqPvg" target="_blank" rel="noopener noreferrer" aria-label="Open project video on YouTube">
+          <img src="https://img.youtube.com/vi/208LFdNqPvg/maxresdefault.jpg" alt="Thumbnail preview of a project demonstration video">
+          <span class="play-button" aria-hidden="true">▶</span>
+        </a>
+        <figcaption>Short video demonstration of one of my projects. Opens on YouTube.</figcaption>
+      </figure>
     </section>
 
+    <section class="section" id="interests">
+      <div class="section-heading">
+        <p class="section-label">Interests</p>
+        <h2>Areas I enjoy exploring and building in</h2>
+      </div>
+      <div class="interest-grid">
+        <div class="interest-card">Industrial IoT and smart systems</div>
+        <div class="interest-card">Cloud-based data engineering</div>
+        <div class="interest-card">Data analytics and visualization</div>
+        <div class="interest-card">Digital marketing and SEO</div>
+        <div class="interest-card">Photography and video editing</div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer section -->
-  <footer>
-    <h2>Contact & Social Links</h2>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/peteromole" target="_blank">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Seyipeters" target="_blank">
-          GitHub
-        </a>
-      </li>
+  <footer class="site-footer" id="contact">
+    <div>
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
+      <p>If you would like to collaborate, discuss a project, or connect professionally, you can reach me through the platforms below.</p>
+    </div>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/peteromole" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/Seyipeters" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     </ul>
     <p id="last-updated" class="last-updated">Last updated: ...</p>
   </footer>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
