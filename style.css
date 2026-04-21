@@ -410,6 +410,54 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.projects-note {
+    margin: -6px 0 16px;
+    color: var(--text-soft);
+}
+
+.project-controls {
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: var(--radius-md);
+    background: var(--surface-muted);
+    border: 1px solid var(--border);
+}
+
+.project-picker-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
+}
+
+.picker-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-strong);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.picker-item:hover {
+    background: var(--surface);
+}
+
+.picker-item input {
+    accent-color: var(--primary);
+}
+
+.projects-empty {
+    margin: 0;
+    padding: 18px;
+    border-radius: 12px;
+    color: var(--text-soft);
+    background: var(--surface-muted);
+    border: 1px dashed var(--border);
+}
+
 .project-card {
     padding: 26px;
     border-radius: var(--radius-md);
@@ -568,6 +616,10 @@ main {
     .section,
     .site-footer {
         padding: 24px;
+    }
+
+    .project-picker-list {
+        grid-template-columns: 1fr;
     }
 
     .hero-copy h1 {
