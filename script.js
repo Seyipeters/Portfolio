@@ -14,13 +14,6 @@ const PROJECT_CANDIDATES = [
         url: 'https://github.com/Seyipeters/Marketing_campaign_analytics'
     },
     {
-        id: 'anlytics_engineering',
-        title: 'Analytics Engineering with dbt',
-        tag: 'Data Modeling',
-        description: 'Campaign analytics dbt project with staging, marts, tests, and seed data for reproducible reporting workflows.',
-        url: 'https://github.com/Seyipeters/anlytics_engineering'
-    },
-    {
         id: 'sql_data_warehouse_project',
         title: 'SQL Data Warehouse Project',
         tag: 'Data Engineering',
@@ -40,13 +33,6 @@ const PROJECT_CANDIDATES = [
         tag: 'Web App',
         description: 'Web version of FinnVocab with a practical learning flow for foreigners living in Finland.',
         url: 'https://github.com/Seyipeters/FinnVocab_Website'
-    },
-    {
-        id: 'ny_taxi_trips_pipeline',
-        title: 'NYC Taxi Trips Pipeline',
-        tag: 'Cloud Data Pipeline',
-        description: 'End-to-end data pipeline using Docker, Apache Beam, Terraform, Google Cloud, and analytics outputs.',
-        url: 'https://github.com/Seyipeters/ny_taxi_trips_pipeline'
     },
     {
         id: 'Smart_Waste_Bin',
@@ -82,7 +68,7 @@ const DEFAULT_FEATURED_PROJECT_IDS = [
     'Marketing_campaign_analytics',
     'sql_data_warehouse_project',
     'FinnVocabAndroid',
-    'ny_taxi_trips_pipeline'
+    'Smart_Waste_Bin'
 ];
 
 function updateThemeButton() {
