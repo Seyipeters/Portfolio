@@ -7,11 +7,18 @@ const PROJECT_STORAGE_KEY = 'portfolio_featured_projects';
 
 const PROJECT_CANDIDATES = [
     {
-        id: 'ai_ml_internship_finland',
-        title: 'AI/ML Internship Project (Finland Focus)',
-        tag: 'Machine Learning',
-        description: 'End-to-end churn risk prediction pipeline with training, evaluation metrics, and reusable inference scripts.',
-        url: 'https://github.com/Seyipeters/Portfolio/tree/main/ai-ml-internship-finland'
+        id: 'Marketing_campaign_analytics',
+        title: 'Marketing Campaign Analytics',
+        tag: 'Analytics',
+        description: 'Campaign performance analysis with generated visualizations, ROI metrics, and README-ready charts.',
+        url: 'https://github.com/Seyipeters/Marketing_campaign_analytics'
+    },
+    {
+        id: 'anlytics_engineering',
+        title: 'Analytics Engineering with dbt',
+        tag: 'Data Modeling',
+        description: 'Campaign analytics dbt project with staging, marts, tests, and seed data for reproducible reporting workflows.',
+        url: 'https://github.com/Seyipeters/anlytics_engineering'
     },
     {
         id: 'sql_data_warehouse_project',
@@ -72,7 +79,7 @@ const PROJECT_CANDIDATES = [
 ];
 
 const DEFAULT_FEATURED_PROJECT_IDS = [
-    'ai_ml_internship_finland',
+    'Marketing_campaign_analytics',
     'sql_data_warehouse_project',
     'FinnVocabAndroid',
     'ny_taxi_trips_pipeline'
